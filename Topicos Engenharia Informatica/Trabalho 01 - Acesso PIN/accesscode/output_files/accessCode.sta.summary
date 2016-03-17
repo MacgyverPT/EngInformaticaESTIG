@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'evt'
+Slack : -5.240
+TNS   : -497.872
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.855
+TNS   : -87.895
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'evt'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.678
+TNS   : -22.506
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'evt'
+Slack : -0.394
+TNS   : -59.343
+
+Type  : Slow 1100mV 0C Model Setup 'evt'
+Slack : -5.331
+TNS   : -500.728
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.803
+TNS   : -84.504
+
+Type  : Slow 1100mV 0C Model Hold 'evt'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.723
+TNS   : -20.632
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'evt'
+Slack : -0.394
+TNS   : -56.684
+
+Type  : Fast 1100mV 85C Model Setup 'evt'
+Slack : -2.825
+TNS   : -250.447
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.076
+TNS   : -63.787
+
+Type  : Fast 1100mV 85C Model Hold 'evt'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.800
+TNS   : -15.759
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'evt'
+Slack : -0.035
+TNS   : -0.169
+
+Type  : Fast 1100mV 0C Model Setup 'evt'
+Slack : -2.678
+TNS   : -239.544
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.661
+TNS   : -50.337
+
+Type  : Fast 1100mV 0C Model Hold 'evt'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.839
+TNS   : -18.677
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'evt'
+Slack : -0.001
+TNS   : -0.001
+
+------------------------------------------------------------

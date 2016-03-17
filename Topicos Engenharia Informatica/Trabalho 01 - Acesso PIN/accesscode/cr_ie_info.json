@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 8",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "\nQuartus Prime requested that Windows modify job info, but Windows could not do so.\nPlease report the full text of this message to Altera so we can investigate its causes.\nIn the meantime, may wish to take the following steps to work around the problem:\n   * Disabled parallel compilation if it is enabled\n   * Ensure you have sufficient memory to run Quartus.\n   * Ensure all service packs and patches from Microsoft are installed\n\nTechnical details:\n   * API: result\n   * OS code: 6 (The handle is invalid.)\n",
+		"source_file" : "/quartus/ccl/thr/thr_process.cpp",
+		"line" : "478",
+		"stack_trace" : "\t0x7ffb29f424c8: ccl_thr + 0x24c8 (thr_msleep + 0xc8)\n\t0x7ffb29f42f1d: ccl_thr + 0x2f1d (thr_thread_wrapper + 0x10d)\n\t0x7ffb29f41cce: ccl_thr + 0x1cce (thr_process_create_and_save_job + 0x6fe)\n\t0x7ffb28a43949: ccl_ipc + 0x3949 (?run@IPC_COMMAND@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_NPEAK01@Z + 0x419)\n\t0x7ffb28d64fa1: sys_flow + 0x4fa1 (?fitter_ran_dat@FLOW_FACADE@@QEBA_NXZ + 0x8a1)\n\t0x7ffb2a0d3f5e: CCL_MSG + 0x13f5e (?msg_set_stack_size@@YAXH@Z + 0x7e)\n\t0x7ffb29d64092: ccl_mem + 0x4092 (?mem_cfg_is_on@@YA_NPEBD_N@Z + 0x11a)\n\t0x7ffb29f42791: ccl_thr + 0x2791 (thr_sleep + 0xb1)\n\t0x7ffb39c38101: KERNEL32 + 0x18101 (BaseThreadInitThunk + 0x21)\n\t0x7ffb3c30c5b3: ntdll + 0x5c5b3 (RtlUserThreadStart + 0x33)\n",
+		"subsystem" : "THR"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "15.1.2",
+		"build" : "193",
+		"edition" : "Lite Edition"
+	}
+}
