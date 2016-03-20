@@ -12,27 +12,27 @@ module accessCode(
 	input	CLOCK_50,														// 50 MHz CLOCK
 	input	[2:0]	KEY,														// KEY BUTTONS
 	input [9:0] SW,														// SWITCHES
-	output reg [0:0] LEDR,												// RED LEDS
-	output reg [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5		// 7 SEGMENT DISPLAYS
+	output reg [0:0] LEDR,					// RED LEDS
+	output reg [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5	// 7 SEGMENT DISPLAYS
 );
 
-reg [3:0] puk[7:0];			// PUK CODE
+reg [3:0] puk[7:0];		// PUK CODE
 reg [3:0] pukTemp[7:0];		// AUXILIARY VARIABLE
-reg [3:0] pukIndex;			// PUK INDEX
+reg [3:0] pukIndex;		// PUK INDEX
 
-reg [3:0] pin[3:0];			// PIN CODE
+reg [3:0] pin[3:0];		// PIN CODE
 reg [3:0] pinTemp [3:0]; 	// AUXILIARY VARIABLE
-reg [2:0] pinIndex;			// PIN INDEX
+reg [2:0] pinIndex;		// PIN INDEX
 
 reg [1:0] attemptsByTime;	// TIMEOUT ATTEMPTS
 reg [1:0] attemptsByError;	// ERROR ATTEMPTS
-reg [24:0] timer;				// PIN INSERTION TIMER
+reg [24:0] timer;		// PIN INSERTION TIMER
 reg timerStatus = 1'b0;		// TIMER STATUS
-reg [5:0] sec;					// SECOND
+reg [5:0] sec;			// SECOND
 
-reg lockOut = 1'b0;			// LOCKOUT STATUS
+reg lockOut = 1'b0;		// LOCKOUT STATUS
 
-reg evt;							// KEY PRESS EVENT
+reg evt;			// KEY PRESS EVENT
 
 always @ (SW[9])
 begin
@@ -145,22 +145,22 @@ begin
 		if(pinIndex < 4)
 		begin
 			case(pinIndex)
-			0:	begin
-					HEX0 <= wrHEX (SW[3:0]);
-					pinTemp[0] = SW[3:0];
-				end
-			1:	begin
-					HEX1 <= wrHEX (SW[3:0]);
-					pinTemp[1] = SW[3:0];
-				end
+			0:begin
+				HEX0 <= wrHEX (SW[3:0]);
+				pinTemp[0] = SW[3:0];
+			end
+			1:begin
+				HEX1 <= wrHEX (SW[3:0]);
+				pinTemp[1] = SW[3:0];
+			end
 			2: begin
-					HEX2 <= wrHEX (SW[3:0]);
-					pinTemp[2] = SW[3:0];
-				end
+				HEX2 <= wrHEX (SW[3:0]);
+				pinTemp[2] = SW[3:0];
+			end
 			3: begin
-					HEX3 <= wrHEX (SW[3:0]);
-					pinTemp[3] = SW[3:0];
-				end
+				HEX3 <= wrHEX (SW[3:0]);
+				pinTemp[3] = SW[3:0];
+			end
 			endcase
 			
 			pinIndex <= pinIndex + 1'b1;
@@ -190,22 +190,22 @@ begin
 			if(pinIndex < 4)
 			begin
 				case(pinIndex)
-					0:	begin
-							HEX0 <= wrHEX (SW[3:0]);
-							pinTemp[0] = SW[3:0];
-						end
-					1:	begin
-							HEX1 <= wrHEX (SW[3:0]);
-							pinTemp[1] = SW[3:0];
-						end
+					0:begin
+						HEX0 <= wrHEX (SW[3:0]);
+						pinTemp[0] = SW[3:0];
+					end
+					1:begin
+						HEX1 <= wrHEX (SW[3:0]);
+						pinTemp[1] = SW[3:0];
+					end
 					2: begin
-							HEX2 <= wrHEX (SW[3:0]);
-							pinTemp[2] = SW[3:0];
-						end
+						HEX2 <= wrHEX (SW[3:0]);
+						pinTemp[2] = SW[3:0];
+					end
 					3: begin
-							HEX3 <= wrHEX (SW[3:0]);
-							pinTemp[3] = SW[3:0];
-						end
+						HEX3 <= wrHEX (SW[3:0]);
+						pinTemp[3] = SW[3:0];
+					end
 				endcase
 				pinIndex <= pinIndex + 1'b1;
 			end
@@ -243,42 +243,42 @@ begin
 		if(pukIndex < 8)
 		begin
 			case(pukIndex)
-				0:	begin
-						HEX0 <= wrHEX (SW[3:0]);
-						pukTemp[0] = SW[3:0];
-					end
-				1:	begin
-						HEX1 <= wrHEX (SW[3:0]);
-						pukTemp[1] = SW[3:0];
-					end
+				0:begin
+					HEX0 <= wrHEX (SW[3:0]);
+					pukTemp[0] = SW[3:0];
+				end
+				1:begin
+					HEX1 <= wrHEX (SW[3:0]);
+					pukTemp[1] = SW[3:0];
+				end
 				2: begin
-						HEX2 <= wrHEX (SW[3:0]);
-						pukTemp[2] = SW[3:0];
-					end
+					HEX2 <= wrHEX (SW[3:0]);
+					pukTemp[2] = SW[3:0];
+				end
 				3: begin
-						HEX3 <= wrHEX (SW[3:0]);
-						pukTemp[3] = SW[3:0];
-					end
+					HEX3 <= wrHEX (SW[3:0]);
+					pukTemp[3] = SW[3:0];
+				end
 				4: begin
-						HEX3 <= ~7'b0000000; // Off
-						HEX2 <= ~7'b0000000; // Off
-						HEX1 <= ~7'b0000000; // Off
-						HEX0 <= wrHEX (SW[3:0]);
-						pukTemp[4] = SW[3:0];
-					end
+					HEX3 <= ~7'b0000000; // Off
+					HEX2 <= ~7'b0000000; // Off
+					HEX1 <= ~7'b0000000; // Off
+					HEX0 <= wrHEX (SW[3:0]);
+					pukTemp[4] = SW[3:0];
+				end
 				5: begin
-						HEX1 <= wrHEX (SW[3:0]);
-						pukTemp[5] = SW[3:0];
-					end
+					HEX1 <= wrHEX (SW[3:0]);
+					pukTemp[5] = SW[3:0];
+				end
 				6: begin
-						HEX2 <= wrHEX (SW[3:0]);
-						pukTemp[6] = SW[3:0];
-					end
+					HEX2 <= wrHEX (SW[3:0]);
+					pukTemp[6] = SW[3:0];
+				end
 				7: begin
-						HEX3 <= wrHEX (SW[3:0]);
-						pukTemp[7] = SW[3:0];
-					end
-				endcase
+					HEX3 <= wrHEX (SW[3:0]);
+					pukTemp[7] = SW[3:0];
+				end
+			endcase
 			pukIndex <= pukIndex + 1'b1;
 		end
 		else if(pukIndex == 8)
