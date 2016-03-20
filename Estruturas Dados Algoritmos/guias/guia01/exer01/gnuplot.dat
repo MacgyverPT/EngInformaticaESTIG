@@ -1,0 +1,26 @@
+#definir o terminal
+set term wxt
+
+#intervalo da funcao
+set xrange[0:2 * pi]
+set yrange[-1:1]
+
+#adicionar a grelha
+set grid
+
+#dar titulo ao grafico
+set title "Estruturas Dados e Algoritmos\n-\nGrafico das funcoes: sin(x) e cos(x)" font "Helvetica, 12"
+
+#definir eixos
+set xlabel "X" font "Helvetica, 12"
+set ylabel "Y" font "Helvetica, 12"
+
+#desenhar os graficos
+plot cos(x), sin(x)
+
+
+#gravar pdf
+set term pdf
+set out "grafico.pdf"
+print "Grafico PDF OK"
+rep
