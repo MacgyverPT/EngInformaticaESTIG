@@ -5,7 +5,7 @@ Date: 1/3/2016
 Authors: Pedro Caixinha, Nº4437
 	 Miguel Rosa, Nº6219
 			
-NOTA: Os ficheiros do projecto está dentro da pasta /accesscode
+NOTA: Os ficheiros do projecto estão dentro da pasta /accesscode
 */
 
 module accessCode(
