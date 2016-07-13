@@ -5,6 +5,7 @@
 **Disciplinas**
 * Física Aplicada à Computação (FAC)
 * Segurança em Redes Informáticas (SRC)
+* Sistemas Operativos (SO)
 * Tópicos de Engenharia Informática (TEI)
 
 <br><br>
