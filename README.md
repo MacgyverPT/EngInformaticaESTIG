@@ -1,6 +1,5 @@
 # Engenharia Informática
-#Instituto Politécnico de Beja - Escola Superior Tecnologia e Gestão
-<br>Trabalhos realizados no ano letivo 2015/2016 do curso Eng. Informática da ESTig (IPBeja)
+<br>Trabalhos realizados durante o curso Eng. Informática da ESTig (IPBeja)
 
 <br><br>
 **Disciplinas**
