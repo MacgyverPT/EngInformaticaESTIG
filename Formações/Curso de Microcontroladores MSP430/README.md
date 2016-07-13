@@ -1,22 +1,22 @@
 ##Código das Sessões
+<br><br>
 
-<br>
 **Sessão: 11 abril 2016**
 * Piscar LED quando se carrega em botão
-
+<br>
 **Sessão: 18 abril 2016**
 * Piscar LED usando interrupções do porto P1
-
+<br>
 **Sessão: 2 maio 2016**
 * Acende o LED usando a interrupção na transição (1->0) e apaga o LED na transição (0->1).
-
+<br>
 **Sessão: 23 maio 2016**
 * Pisca LED usando o bloco temporizador do Timer_A e a interrupção TA0IFG.
-
+<br>
 **Sessão: 30 maio 2016**
 * Pisca LEDs de com frequência independente usando  os blocos comparadores CCR1 e CCR2 do Timer_A e as interrupções TA0IV_TACCRx.
 * Pisca LED usando um sinal de output no pino P1.2 de PWM gerado pelo CCR1 do Timer0_A. O sinal de PWM é gerado sem intervenção do CPU e, por isso, não é necessário recorrer a interrupções. (É necessário ligar o sinal PWM a um dos LEDs: retirar o jumper e conectar o pino Out2 em P1.2 ao LED usando um fio de ligação.)
-
+<br>
 **Sessão: 6 junho 2016**
 * Quando a tensão na entrada CA2 (pino P1.2) é maior que a tensão de referência o LED acende. Quando a tensão em CA2 é menor que a tensão de referência o LED apaga.
 * Quando a tensão na entrada CA2 (pino P1.2) é maior que a tensão de referência o LED acende. Quando a tensão em CA2 é menor que a tensão de referência o LED apaga. Em vez de estar sempre a realizar a comparação, quando o tensão em CA2 ultrapassa a tensão de referência é gerado uma interrupção.
