@@ -3,8 +3,9 @@
 
 <br><br>
 **Disciplinas**
-* Tópicos de Engenharia Informática
-* Física Aplicada à Computação
+* Física Aplicada à Computação (FAC)
+* Segurança em Redes Informáticas (SRC)
+* Tópicos de Engenharia Informática (TEI)
 
 <br><br>
 **Formações/Workshops**
