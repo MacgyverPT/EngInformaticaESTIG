@@ -6,4 +6,11 @@ Trabalhos realizados no ano letivo 2015/2016 do curso Eng. Informática da ESTig
 * Tópicos de Engenharia Informática
 * Física Aplicada à Computação
 
+
+**Formações/Workshops**
+* Microcontroladores MSP430
+
+
+
+
 Miguel @ 2015 - 2016
