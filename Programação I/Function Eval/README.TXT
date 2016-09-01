@@ -1,0 +1,7 @@
+
+PROJECT TITLE: TP1 base
+PURPOSE OF PROJECT: bae code for TP1
+VERSION or DATE: 2011/11/29
+HOW TO START THIS PROJECT: Ruan ACM program in class Graph
+AUTHORS: Joao Paulo Barros
+

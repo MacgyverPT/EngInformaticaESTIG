@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=function
+comment0.target=FunctionEval(java.lang.String)
+comment1.params=x
+comment1.target=double\ eval(double)
+comment1.text=\n\ Evaluates\ the\ function\ for\ the\ given\ x\ value\n\ @param\ x\ the\ function\ parameter\n\ @return\ the\ function\ value\ for\ the\ given\ x\ value\n
+numComments=2
