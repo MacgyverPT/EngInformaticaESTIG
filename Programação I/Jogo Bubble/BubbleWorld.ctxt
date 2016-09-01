@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=bubbles
+comment0.target=BubbleWorld(Bubble[][])
+comment0.text=\n\ BubbleWorld\ class\ construtor\n\ @param\ Bubbles[][]\ array\ with\ bubbles\n
+comment1.params=x\ y
+comment1.target=void\ draw(int,\ int)
+comment1.text=\n\ This\ method\ draws\ a\ grid\ with\ bubbles\n\ @param\ x\ X\ coordinate\n\ @param\ y\ Y\ coordinate\n
+comment2.params=
+comment2.target=Bubble[][]\ getBubbles()
+comment2.text=\n\ This\ method\ gets\ the\ bubbles\n
+numComments=3

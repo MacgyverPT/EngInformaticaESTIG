@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=width\ height\ color
+comment0.target=Bubble(double,\ double,\ java.awt.Color)
+comment0.text=\n\ Bubble\ class\ construtor\n\ @param\ width\ bubble's\ width\n\ @param\ height\ bubble's\ height\n\ @param\ color\ bubble's\ color\n
+comment1.params=width\ height
+comment1.target=void\ drawCircle(double,\ double)
+comment1.text=\n\ This\ method\ draw\ a\ circle\ (bubble)\n\ @param\ width\ bubble's\ width\n\ @param\ height\ bubble's\ height\n
+comment2.params=
+comment2.target=double\ getWidth()
+comment2.text=\n\ This\ method\ gets\ de\ bubble's\ width\n
+comment3.params=
+comment3.target=double\ getHeight()
+comment3.text=\n\ This\ method\ gets\ bubble's\ height\n
+numComments=4
