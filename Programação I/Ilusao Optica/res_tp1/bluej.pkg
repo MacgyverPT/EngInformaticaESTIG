@@ -1,0 +1,27 @@
+#BlueJ package file
+package.editor.height=400
+package.editor.width=558
+package.editor.x=312
+package.editor.y=21
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+readme.editor.height=519
+readme.editor.width=618
+readme.editor.x=0
+readme.editor.y=0
+target1.appletHeight=500
+target1.appletWidth=500
+target1.editor.height=800
+target1.editor.width=762
+target1.editor.x=337
+target1.editor.y=0
+target1.height=50
+target1.name=Illusions
+target1.numberAppletParameters=0
+target1.showInterface=false
+target1.type=AppletTarget
+target1.width=80
+target1.x=80
+target1.y=20
