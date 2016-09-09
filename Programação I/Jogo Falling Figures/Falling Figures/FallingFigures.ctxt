@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=FallingFigures()
+comment1.target=void\ run()
+comment2.target=void\ movingObjects()
+comment3.params=message\ min\ max
+comment3.target=int\ askInt(String,\ int,\ int)
+comment4.params=c
+comment4.target=void\ objectMaker(int)
+comment5.params=e
+comment5.target=void\ mousePressed(MouseEvent)
+comment6.target=void\ incrementCounter()
+comment7.params=x\ y
+comment7.target=void\ testClick(double,\ double)
+numComments=8

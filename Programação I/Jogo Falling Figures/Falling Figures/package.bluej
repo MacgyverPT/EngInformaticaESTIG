@@ -1,0 +1,23 @@
+#BlueJ package file
+package.editor.height=376
+package.editor.width=560
+package.editor.x=125
+package.editor.y=91
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.appletHeight=500
+target1.appletWidth=500
+target1.editor.height=705
+target1.editor.width=970
+target1.editor.x=9
+target1.editor.y=25
+target1.height=50
+target1.name=test
+target1.numberAppletParameters=0
+target1.showInterface=false
+target1.type=AppletTarget
+target1.width=80
+target1.x=60
+target1.y=10
