@@ -1,0 +1,10 @@
+1. Copiar ambas as directorias para dentro da directoria de instalação do BlueJ.
+
+2. Executar o BlueJ. 
+No menu Tools->Preferences->Libraries fazer Add e colocar o nome completo do ficheiro .jar
+na directoria acm. Assim, na Location deve ficar:
+
+..........\acm\acm.jar
+
+3. Terminar o BlueJ
+

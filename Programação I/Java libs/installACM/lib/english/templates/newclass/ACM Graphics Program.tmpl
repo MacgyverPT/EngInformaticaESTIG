@@ -1,0 +1,46 @@
+$PKGLINE
+import acm.graphics.*;
+import acm.program.*;
+import acm.gui.*; 
+import acm.util.*; 
+import acm.io.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.applet.*;
+
+/** Este código utiliza a <a href="http://jtf.acm.org/index.html">
+ * biblioteca ACM Java Task Force</a> para a qual existe
+ * <a href="http://jtf.acm.org/javadoc/student/index.html">esta documentação</a>.
+ * <p>
+ * Esta classe é um exemplo de um "GraphicsProgram": um programa com
+ * uma janela na qual é possível desenhar objectos gráficos. 
+ * <p>
+ * Este template para o BlueJ foi criado na 
+ * <a href="http://www.estig.ipbeja.pt">
+ * Escola Superior de Tecnologia e Gestão</a> do
+ * Instituto Politécnico de Beja, por Joao Paulo Barros, 
+ * em 2007/03/23. 
+ * Esta é a versão de 2008/09/28.
+ * <hr>
+ * @author (o seu nome) 
+ * @version (número de versão ou data) 
+ */
+ // Deve escrever o código utilizando a língua inglesa
+
+public class $CLASSNAME extends GraphicsProgram 
+{
+    /** É aqui que os objectos da classe $CLASSNAME 
+     *  começam realmente a fazer coisas. 
+     *  Coloque o seu código entre as chavetas.
+     */    
+    public void run()
+    {
+        // Este código cria um objecto da classe GLabel e 
+        // guarda o nome desse objecto na variável oneGLabel
+        GLabel oneGLabel = new GLabel("IPB-ESTIG", 40, 10);
+        // Pede ao objecto da classe $CLASSNAME para adicionar
+        // o nosso objecto GLabel na janela gráfica
+        this.add(oneGLabel);
+    }
+} 
