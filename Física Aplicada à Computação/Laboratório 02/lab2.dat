@@ -1,0 +1,159 @@
+#
+#
+#
+#
+###########
+
+#Todas as opções em default
+reset
+print "\nLaboratorio 2 - Lancamento de um Foguetao\n\n"
+
+#define terminal, formato e fonte para a legenda do gráfico
+set term wxt dashed enhanced
+set size
+set key box outside font "Helvetica, 9" samplen .8 Right
+set key title "Coord." font "Helvetica, 8"
+
+# define título e legenda dos eixos
+set title "Laboratorio 2 \n-\n Lancamento de um Foguetao" font "Helvetica, 12"
+set xlabel "x [m]" font "Helvetica, 12"
+set ylabel "y [m]" font "Helvetica, 12"
+
+# define a amostragem de pontos
+set sample 600
+
+# define o número de tics (intervalo de valores: de x em x) nos eixos dos x e a fonte
+set xtics mirror font "Helvetica, 10"
+set mxtics 5
+
+# define o número de tics nos eixos dos y e a fonte
+set ytics nomirror font "Sans, 10"
+set mytics 5
+
+#outros dados do grafico
+set y2zeroaxis
+set grid
+set angles degrees
+set dummy t
+
+
+##### DADOS PARA AS EQUACOES
+g = 9.8
+ac = 2
+
+#dar valor ao x0, y0, v0, alfa e t1
+x0 = 10
+y0 = 10
+v0 = 20
+alfa = 30
+t1 = 10
+
+#Calculos auxiliares
+v0x = v0 * cos(alfa)
+v0y = v0 * sin(alfa)
+ax = ac * cos(alfa)
+ay = ac * sin(alfa)
+
+
+x1 = x0 + (v0 * cos(alfa) * t1) + (0.5 * ac * cos(alfa) * t1**2) #x1 e y1 sao as coordenadas do ponto de lancamento quando se desligam os motores
+y1 = y0 + (v0 * sin(alfa) * t1) + (0.5 * ac * sin(alfa) * t1**2) #no instante t1
+
+#lançamento
+v1x = v0 * cos(alfa) + (ac * cos(alfa) * t1)
+v1y = v0 * sin(alfa) + (ac * sin(alfa) * t1)
+
+t2 = 2
+
+x2 = x1 + v1x * t2
+y2 = y1 + v1y * t2 - 0.5*g*t2**2 #para calcular o voo balistico, faz-se y2 = 0
+
+
+#ouput dos dados iniciais:
+print "\nDados Iniciais: \n"
+print "Forca gravitica: g = ", g, "m/s"
+print "Aceleracao: ac = ", ac, "m/s"
+print "Posicao Inicial x0 = ", x0, "m"
+print "Posicao Inicial y0 = ", y0, "m"
+print "Velocidade Inicial v0 = ", v0, "s"
+print "Angulo: alfa = ", alfa, "º"
+print "Tempo t1 = ", t1, "s"
+
+
+
+
+################ REQUISITOS DO ENUNCIADO
+print "\n\nResultados obtidos:\n"
+
+#2.1. Altura, alcance, velocidade no momento em que os reactores sao desligados
+valorVelocidade = sqrt (v1x**2 + v1y**2)
+print "- Velocidade quando sao desligados os reactores: ", valorVelocidade , " s"
+#
+#2.2. Altura maxima
+tSubida = v1y / g
+hMax = y1 + v1y * tSubida - 0.5*g*tSubida**2
+print "- Altura maxima: ", hMax, " m"
+#
+#2.3. Tempo de voo balistico
+tempoVooBalistico = ( (2 * v1y) / g) + sqrt( v1y**2 + (2*g*y1) )
+print "- Tempo de voo valistico: ", tempoVooBalistico, "t"
+#
+#2.4. Tempo de voo total
+tTotalVoo = t1 + tempoVooBalistico
+print "- Tempo total de voo: ", tTotalVoo, "t"
+#
+#2.5. Alcance no final do voo
+alcanceFinalVoo = x1 + v1x * tempoVooBalistico
+print "- Alcance no final do voo: ", alcanceFinalVoo, "m"
+#
+#2.6. Componentes da velocidade no impacto e angulo em relacao a horizontal nesse ponto
+vx = v1x
+vy = v1y - g * tempoVooBalistico
+anguloInpactoSolo = atan(vy / vx)
+print "- Angulo em relacao ao solo: ", anguloInpactoSolo, "º"
+
+
+#definicao das labels
+set label 1 sprintf("t_{v}=%.3f m/s",tTotalVoo)   at tTotalVoo*.07, xa font "Helvetica, 10"
+set label 2 sprintf("x_{a}=%.3f m",xa)     at tVoo*.35, xa font "Helvetica, 10"
+set label 3 sprintf("y_{max}=%.3f m",yMax) at tVoo*.65, xa font "Helvetica, 10"
+set label 4 sprintf("v_{o}=%.1f m/s",vo) at tVoo*.07, xa*.9 font "Helvetica, 10"
+set label 5 sprintf("{/Symbol a}=%.1f^{o}",anguloAlpha) at tVoo*.07, xa*.8 font "Helvetica, 10"
+
+# define o limite do eixo do x (distancia)
+set xrange [0:alcanceFinalVoo]
+
+# define o limite do eixo do y (altura)
+set yrange [0:hMax]
+
+
+# define equações paramétricas da trajectória
+x2 = x1 + v1x * t2
+y2 = y1 + v1y * t2 - 0.5*g*t2**2 # permite tracar a parabola
+
+
+
+
+#desenhar os graficos
+plot x2 w l lt 1 lw 2 lc rgb "blue" t "x(t)", \
+     y2 w l lt 1 lw 2 lc rgb "red" t "y(t)" axis x1y2
+
+
+
+# define terminal pdf e ficheiro de escrita
+set term pdf dashed enhanced 
+set out "grafico.pdf"
+print "Grafico pdf ok"
+rep
+
+# define terminal jpeg e ficheiro de escrita
+set term png enhanced 
+set out "grafico.png"
+print "Grafico png ok\n"
+rep
+
+# define novamente terminal x11
+set term wxt dashed enhanced
+set out
+rep
+
+
