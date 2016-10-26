@@ -1,5 +1,5 @@
 # Engenharia Informática
-<br>Trabalhos realizados durante o curso Eng. Informática da ESTig (IPBeja)
+<br>Trabalhos realizados durante o curso Eng. Informática da ESTiG (IPBeja)
 
 <br><br>
 **Disciplinas**
