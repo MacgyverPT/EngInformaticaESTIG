@@ -1,4 +1,4 @@
-##Código das Sessões
+##Índice dos Códigos das Sessões
 <br><br>
 
 **Sessão: 11 abril 2016**

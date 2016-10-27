@@ -1,4 +1,4 @@
-##Laboratórios
+##Índice dos Laboratórios
 <br><br>
 
 **Laboratório 1: Lei de Ohm e Associação de Resistências**
