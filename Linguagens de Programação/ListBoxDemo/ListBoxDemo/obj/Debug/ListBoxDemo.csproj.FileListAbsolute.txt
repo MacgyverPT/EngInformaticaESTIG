@@ -1,0 +1,9 @@
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\bin\Debug\ListBoxDemo.exe.config
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\bin\Debug\ListBoxDemo.exe
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\bin\Debug\ListBoxDemo.pdb
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.csprojResolveAssemblyReference.cache
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.Form1.resources
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.Properties.Resources.resources
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.csproj.GenerateResource.Cache
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.exe
+\\Vboxsvr\2016-2017\Linguagens Programacao\CSharp\Exercicios\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.pdb
