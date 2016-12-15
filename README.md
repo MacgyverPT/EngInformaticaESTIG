@@ -5,6 +5,7 @@
 **Disciplinas**
 * Física Aplicada à Computação (FAC)
 * Linguagens de Programação (LP)
+* Programação I (P1)
 * Segurança em Redes Informáticas (SRC)
 * Sistemas Operativos (SO)
 * Tópicos de Engenharia Informática (TEI)
