@@ -4,10 +4,10 @@
 <br><br>
 **Disciplinas**
 * Física Aplicada à Computação (FAC)
+* Linguagens de Programação (LP)
 * Segurança em Redes Informáticas (SRC)
 * Sistemas Operativos (SO)
 * Tópicos de Engenharia Informática (TEI)
-* Linguagens de Programação (LP)
 
 <br><br>
 **Formações/Workshops**
