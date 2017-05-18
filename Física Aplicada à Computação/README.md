@@ -6,8 +6,10 @@
 
 <br>
 **Laboratório 2: Lançamento de um Foguete**
+
 * Neste trabalho vamos usar o programa Gnuplot para realizar cálculos de lançamento de projécteis e simultaneamente visualizar as trajectórias. A linguagem do Gnuplot permite integrar os cálculos numéricos com as instruções que geram gráficos tornando muito rápido e eficiente o estudo de problemas físicos relativamente simples.
 
 <br>
 **Laboratório 3: Circuitos RC Série**
+
 * Neste trabalho vamos usar circuitos RC série, observar os processos de carga e descarga de um condensador e medir as constantes de tempo, definidas por τ = RC.
