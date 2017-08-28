@@ -1,9 +1,11 @@
-##Índice dos Trabalhos das aulas
+##**Índice dos Trabalhos das aulas**
+
 <br><br>
 
-**MyCalculator**
+**MyCalculator**<br>
 * Recriar uma máquina de calcular idêntica à do Windows
 
 <br>
-**ListboxDemo**
+
+**ListboxDemo**<br>
 * Compreender o uso das listbox
