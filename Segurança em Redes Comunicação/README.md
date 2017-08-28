@@ -1,9 +1,5 @@
 ##Índice dos Trabalhos das aulas
 <br><br>
 
-**Viginére**
+**Viginére**<br>
 * Criar a cifra de Viginére em C++
-
-<br>
-**xxx**
-* xxxxxx
