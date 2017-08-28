@@ -1,4 +1,4 @@
-﻿##Índice dos Trabalhos
+##Índice dos Trabalhos
 <br><br>
 Trabalhos realizados para a disciplina de Programação I. 
 
@@ -10,10 +10,12 @@ Trabalhos realizados para a disciplina de Programação I.
 
 
 <br>
-**Trabalhos**
-* **Function Eval**:
-* **House**: O objectivo geral do trabalho é escrever um programa na linguagem de programação Java que produza a imagem de uma casa, usando a classe GTurtle.
-* **Ilusão Óptica**: O objectivo geral deste trabalho é o de construir um programa que permite gerar três ilusões ópticas.
+
+**Jogos**
+* **Function Eval**: 
+* **House**: O objectivo geral do trabalho é escrever um programa na linguagem de programação Java que produza a imagem de uma casa, usando a classe GTurtle. 
+* **Ilusão Óptica**: O objectivo geral deste trabalho é o de construir um programa que permite gerar três ilusões ópticas. 
+
 
 <br>
 **Libraries**
